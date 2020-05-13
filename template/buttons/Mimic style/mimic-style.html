@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimic style</title>
+    <link rel="stylesheet" href="mimic-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="mybody">
+    <div class="container">
+        <ul> 
+            <li><img src="./images/github.png" alt="github"></li>
+            <li><img src="./images/linkedin.png" alt="linkedin"></li>
+            <li><img src="./images/mail.png" alt="mail"></li>
+            <li><img src="./images/site.png" alt="site"></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    $(function(){
+        $(".container li").click(function() {
+            $(this).addClass('active');
+            setTimeout(()=>{
+                $(this).removeClass('active');
+            }, 500);
+        });
+    }); 
+    </script>
+</body>
+</html>
